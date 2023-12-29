@@ -11,7 +11,7 @@ J. J. Bird, L. J. Manso, E. P. Ribiero, A. Ekart, and D. R. Faria, “A study on
 Gunakan [pip](https://pip.pypa.io/en/stable/) untuk instalasi dependencies dari program ini
 
 ```bash
-pip install tensorflow numpy Flask
+pip install tensorflow numpy Flask Pillow
 ```
 
 ## Penggunaan
