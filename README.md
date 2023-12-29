@@ -1,4 +1,5 @@
 # Klasifikasi Tingkat Fokus Pada Data EEG Menggunakan Convolutional Neural Network
+![image](https://github.com/dekifx/KlasifikasiFokusCNN/assets/46070105/e1c5897c-2913-47d8-b681-7dc1eb758494)
 
 Program ini akan mengklasifikasikan tingkat fokus dari Data EEG ke 3 kondisi yaitu Rileks, Konsentrasi, dan Netral menggunakan Convolutional Neural Network.\
 Dataset yang terlampir merupakan EEG brainwave dataset: mental state - Relaxed, Neutral, and Concentrating brainwave data oleh Jordan James Bird.\
