@@ -1,0 +1,43 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klasifikasi Tingkat Fokus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full bg-white p-8 rounded shadow-md">
+      <h1 class="text-2xl font-bold mb-4">Klasifikasi Tingkat Fokus</h1>
+      <label for="inputData" class="block text-sm font-medium text-gray-600"
+        >Input Spectrogram:</label
+      >
+      <form id="uploadForm" enctype="multipart/form-data">
+        <input
+          type="file"
+          id="fileInput"
+          name="file"
+          accept=".png, .jpg, .jpeg"
+          required
+          class="mt-1 p-2 block w-full border border-gray-300 rounded-md"
+          onchange="loadFile(event)"
+        />
+        <button
+          type="button"
+          onclick="predictImage()"
+          class="mt-4 p-2 bg-blue-500 text-white rounded-md"
+        >
+          Predict
+        </button>
+      </form>
+      <img id="imageDisplay" class="mt-4 w-max" />
+      <div id="predictionResult" class="mt-4"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
